@@ -5,22 +5,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;                             /*Font type*/
 }
 body
 {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;                           /*Font height*/
-    background: #0a0218;
+    min-height: 100vh;                                              /*Font vertical height*/
+    background: #060111;                                          /*Background color*/
 }
 ul
 {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 30рх;
+    gap: 30рх;                                                      /*Gap size*/
 }
 ul li
 {
@@ -30,10 +30,10 @@ ul li
 ul li a
 {
     position: relative;
-    font-size: 1.2em;                            /*Font size*/
+    font-size: 1.2em;                                               /*Font size*/
     text-decoration: none;
-    line-height: 1.2em;
-    letter-spacing: 2px;
+    line-height: 1.2em;                                             /*Letter height size*/
+    letter-spacing: 2px;                                            /*Letter space size*/
     text-transform: uppercase;
     color: transparent;
     -webkit-text-stroke: 0.5px rgb(255, 255, 255);
@@ -45,13 +45,13 @@ ul li a::before
     color: var(--clr);
     width: 0;
     overflow: hidden;
-    transition: 0.5s;
-    border-right: 1.5px solid var(--clr);               /*Border size*/
-    -webkit-text-stroke: 0.5px var(--clr);
+    transition: 0.5s;                                               /*Speed animation border*/
+    border-right: 1.5px solid var(--clr);                           /*Border size*/
+    -webkit-text-stroke: 0.5px var(--clr);                          /*Text-stroke size*/
 }
 ul li a:hover::before
 {
-    width: 100%;
-    filter: drop-shadow(0 0 25px)var(--clr);
-    filter: blur(0.7px);
+    width: 105%;                                                    /*Stroke range adjustments*/
+    filter: drop-shadow(0 0 25px)var(--clr);                        /*Shadow filter effect*/
+    filter: blur(0.7px);                                            /*Blur filter effect*/
 }
