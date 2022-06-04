@@ -6,6 +6,5 @@
 </head>
 <body>
     <a href="#" style="--clr:#5633f1"><span>INFO</span><i></i></a>
-    <script src="popupmenuhover.js"></script>
 </body>
 </html>
